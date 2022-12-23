@@ -11,15 +11,25 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   background-color: hsl(214deg, 67%, 18%);
   margin: 0;
-  height: 300vh;
+  height: auto;
   overflow-x: hidden;
 }
 
 p {
   font-size: 16px;
   font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(150deg, 100%, 98%);
+}
+a:hover {
+  color: #a9a9a9;
 }
 
 nav {
@@ -50,13 +60,8 @@ nav ul li {
   margin-right: 4vw;
 }
 nav a {
-  text-decoration: none;
   color: inherit;
   padding: 10px;
-  flex-basis: 0;
-}
-nav a:hover {
-  color: #a9a9a9;
 }
 
 #main-image {
@@ -151,6 +156,29 @@ main {
   background-color: rgba(29, 14, 116, 0.541);
 }
 
+#website {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 7vh;
+}
+#website > h1 {
+  font-size: 40px;
+}
+
+#flex {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+#flex .content-box {
+  flex: 1 1;
+}
+
 #content-about {
   display: flex;
   flex-wrap: wrap;
@@ -171,6 +199,15 @@ main {
   background-color: hsl(214deg, 66%, 27%);
   padding: 2.5rem;
   overflow-wrap: break-word;
+}
+
+footer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: hsl(214deg, 58%, 34%);
+  border-top: 3px solid rgb(28, 33, 36);
+  margin-top: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

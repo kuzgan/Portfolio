@@ -17,14 +17,23 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  display: flex;
+  flex-direction: column;
   background-color: $background-color;
   margin: 0;
-  height: 300vh;
+  height: auto;
   overflow-x: hidden;
 }
 p {
   font-size: 16px;
   font-weight: normal;
+}
+a{
+  text-decoration: none;
+  color: $font-color;
+  &:hover {
+    color: $font-color-hover;
+  }
 }
 //  navigation bar
 nav {
@@ -32,7 +41,8 @@ nav {
   top: 0;
   width: 100vw;
   min-height: 7vh;
-  display: flex;justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 0 5vw 0 5vw;
   border-bottom: 3px solid $border-color;
@@ -53,13 +63,10 @@ nav {
     }
   }
   a {
-    text-decoration: none;
+    
     color: inherit;
     padding: 10px;
-    flex-basis: 0;
-    &:hover {
-      color: $font-color-hover;
-    }
+    
   }
 }
 //  main image
@@ -116,7 +123,7 @@ main {
   align-items: center;
   gap: 1.5rem;
   min-width: 100%;
-  
+
   border-radius: 3.5rem;
   background-color: $background-color-secondary;
   padding: 2.5rem;
@@ -158,6 +165,31 @@ main {
   }
 }
 
+//websites
+
+#website {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 1rem;
+  
+  margin-bottom: 7vh;
+  >h1{
+    font-size: 40px;
+  }
+}
+#flex{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 1.5rem;
+  .content-box {
+    flex: 1 1;
+  }
+}
+
 //
 #content-about {
   display: flex;
@@ -179,4 +211,15 @@ main {
   background-color: $background-color-secondary;
   padding: 2.5rem;
   overflow-wrap: break-word;
+}
+
+//footer
+
+footer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: $conteners-color;
+  border-top: 3px solid $border-color;
+  margin-top: auto;
 }
