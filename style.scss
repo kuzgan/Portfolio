@@ -22,7 +22,7 @@ body {
   background-color: $background-color;
   margin: 0;
   height: auto;
-  overflow-x: hidden;
+ // overflow-x: hidden;
 }
 p {
   font-size: 16px;
@@ -39,7 +39,7 @@ a{
 nav {
   position: sticky;
   top: 0;
-  width: 100vw;
+  width: 100%;
   min-height: 7vh;
   display: flex;
   justify-content: space-between;

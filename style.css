@@ -16,7 +16,6 @@ body {
   background-color: hsl(214deg, 67%, 18%);
   margin: 0;
   height: auto;
-  overflow-x: hidden;
 }
 
 p {
@@ -35,7 +34,7 @@ a:hover {
 nav {
   position: sticky;
   top: 0;
-  width: 100vw;
+  width: 100%;
   min-height: 7vh;
   display: flex;
   justify-content: space-between;
