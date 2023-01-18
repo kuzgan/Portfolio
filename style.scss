@@ -3,7 +3,7 @@
 *::before {
   box-sizing: border-box;
 }
-$main-font: Arial, Helvetica, sans-serif;
+$main-font: Lato, sans-serif;
 $background-color: hsl(214, 67%, 18%);
 $background-color-secondary: hsl(214, 66%, 27%);
 $font-color: hsl(150, 100%, 98%);
@@ -15,6 +15,7 @@ html {
   font-family: $main-font;
   color: $font-color;
   scroll-behavior: smooth;
+  scroll-padding: 7vh;
 }
 body {
   display: flex;
@@ -22,13 +23,12 @@ body {
   background-color: $background-color;
   margin: 0;
   height: auto;
- // overflow-x: hidden;
 }
 p {
   font-size: 16px;
   font-weight: normal;
 }
-a{
+a {
   text-decoration: none;
   color: $font-color;
   &:hover {
@@ -63,19 +63,17 @@ nav {
     }
   }
   a {
-    
     color: inherit;
     padding: 10px;
-    
   }
 }
 //  main image
 #main-image {
   display: flex;
-  margin-bottom: 15vh;
+  //margin-bottom: 15vh;
   position: relative;
   height: 60vh;
-  width: 100vw;
+  width: 100%;
   > img {
     width: 100vw;
     height: inherit;
@@ -100,12 +98,13 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 //main box
 #main {
   height: inherit;
+  margin-top: 15vh;
 }
 main {
   display: flex;
@@ -173,13 +172,13 @@ main {
   align-content: center;
   justify-content: center;
   gap: 1rem;
-  
+
   margin-bottom: 7vh;
-  >h1{
+  > h1 {
     font-size: 40px;
   }
 }
-#flex{
+#flex {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -204,6 +203,7 @@ main {
 
 .content-box {
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
   justify-content: space-evenly;
   flex: 1 1 30%;
