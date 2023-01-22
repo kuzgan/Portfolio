@@ -8,7 +8,7 @@ html {
   font-family: Lato, sans-serif;
   color: hsl(150deg, 100%, 98%);
   scroll-behavior: smooth;
-  scroll-padding: 7vh;
+  scroll-padding: var(--scroll-padding, 7vh);
 }
 
 body {
@@ -36,11 +36,10 @@ nav {
   position: sticky;
   top: 0;
   width: 100%;
-  min-height: 7vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5vw 0 5vw;
+  padding: 0.25rem;
   border-bottom: 3px solid rgb(28, 33, 36);
   background-color: hsl(214deg, 67%, 18%);
   z-index: 1;
@@ -64,6 +63,45 @@ nav a {
   padding: 10px;
 }
 
+.toggle-button {
+  padding: 0;
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: hsl(150deg, 100%, 98%);
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .toggle-button {
+    display: flex;
+  }
+  nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+  }
+  nav ul.active {
+    display: flex;
+  }
+  nav ul li {
+    text-align: center;
+  }
+}
 #main-image {
   display: flex;
   position: relative;
@@ -118,6 +156,7 @@ main {
   align-items: center;
   gap: 1.5rem;
   min-width: 100%;
+  flex-wrap: wrap;
   border-radius: 3.5rem;
   background-color: hsl(214deg, 66%, 27%);
   padding: 2.5rem;
@@ -208,8 +247,20 @@ footer {
   align-content: center;
   justify-content: center;
   background-color: hsl(214deg, 58%, 34%);
-  border-top: 3px solid rgb(28, 33, 36);
+  border-top: 2px solid rgb(28, 33, 36);
   margin-top: auto;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 1vw;
+  padding: 0;
+}
+footer a {
+  color: inherit;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -15,7 +15,7 @@ html {
   font-family: $main-font;
   color: $font-color;
   scroll-behavior: smooth;
-  scroll-padding: 7vh;
+  scroll-padding: var(--scroll-padding, 7vh);
 }
 body {
   display: flex;
@@ -40,11 +40,10 @@ nav {
   position: sticky;
   top: 0;
   width: 100%;
-  min-height: 7vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5vw 0 5vw;
+  padding: 0.25rem;
   border-bottom: 3px solid $border-color;
   background-color: $background-color;
   z-index: 1;
@@ -65,6 +64,45 @@ nav {
   a {
     color: inherit;
     padding: 10px;
+  }
+}
+
+.toggle-button {
+  padding: 0;
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  .bar {
+    height: 3px;
+    width: 100%;
+    background-color: $font-color;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .toggle-button {
+    display: flex;
+  }
+  nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    ul {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      &.active {
+        display: flex;
+      }
+      li {
+        text-align: center;
+      }
+    }
   }
 }
 //  main image
@@ -121,7 +159,7 @@ main {
   align-items: center;
   gap: 1.5rem;
   min-width: 100%;
-
+  flex-wrap: wrap;
   border-radius: 3.5rem;
   background-color: $background-color-secondary;
   padding: 2.5rem;
@@ -220,6 +258,18 @@ footer {
   align-content: center;
   justify-content: center;
   background-color: $conteners-color;
-  border-top: 3px solid $border-color;
+  border-top: 2px solid $border-color;
   margin-top: auto;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 1vw;
+    padding: 0;
+  }
+  a {
+    color: inherit;
+    padding: 10px;
+  }
 }
