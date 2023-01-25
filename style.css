@@ -184,7 +184,7 @@ main {
   margin: 0;
 }
 
-#skills ul {
+.skills ul {
   display: flex;
   gap: 1rem;
   list-style: none;
@@ -193,7 +193,7 @@ main {
   padding: 1rem 0;
   align-self: center;
 }
-#skills ul li {
+.skills ul li {
   flex: 1 1 110px;
   text-align: center;
   padding: 1rem;
