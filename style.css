@@ -54,7 +54,7 @@ nav ul {
   display: flex;
   justify-content: center;
   align-content: center;
-  margin-right: 6vw;
+  margin-right: 11vw;
 }
 nav ul li {
   margin-right: 4vw;
@@ -64,7 +64,7 @@ nav a {
   padding: 10px;
 }
 nav .main-link {
-  margin-left: 10vw;
+  margin-left: 15vw;
 }
 
 .toggle-button {
@@ -110,7 +110,7 @@ nav .main-link {
 #main-image {
   display: flex;
   position: relative;
-  height: 60vh;
+  height: 70vh;
   width: 100%;
 }
 #main-image > img {
@@ -149,7 +149,7 @@ nav .main-link {
 main {
   display: flex;
   flex-direction: column;
-  width: 80vw;
+  width: 70vw;
   height: inherit;
   margin-bottom: 7vh;
   justify-content: flex-start;
@@ -201,29 +201,6 @@ main {
   background-color: rgba(29, 14, 116, 0.541);
 }
 
-#website {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 7vh;
-}
-#website > h1 {
-  font-size: 40px;
-}
-
-#flex {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  gap: 1.5rem;
-}
-#flex .content-box {
-  flex: 1 1;
-}
-
 #content-about {
   display: flex;
   flex-wrap: wrap;
@@ -239,12 +216,31 @@ main {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  gap: 1.75rem;
   flex: 1 1 30%;
   border-radius: 2.5rem;
   background-color: hsl(214deg, 66%, 27%);
   padding: 2.5rem;
+  font-size: 16px;
   overflow-wrap: break-word;
+}
+
+.list-of-skills {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  align-self: center;
+}
+.list-of-skills li {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: rgba(29, 14, 116, 0.541);
 }
 
 footer {
