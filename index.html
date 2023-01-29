@@ -5,90 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kamil Majcherczak - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="https://kit.fontawesome.com/887089b74b.js" crossorigin="anonymous"></script>
+    <script defer src="main.js"></script>
   </head>
-  <a name="top"></a>
   <body>
-    <nav>
-      <div>Portfolio</div>
-      <ul>
+    <nav name="top">
+      <a href="#" class="main-link">PORTFOLIO</a>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <ul navbar-links>
         <li><a href="#top">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#websites">Websites</a></li>
-        <li><a href="#">GitHub</a></li>
+        <li>
+          <a href="https://github.com/kuzgan" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </li>
       </ul>
     </nav>
     <div id="main-image">
-      <img  src="images\main-picture1.jpg" alt="main image" />
-      <div><p>Frond-end developer</p></div>
+      <img src="images\main-picture1.jpg" alt="main image" />
+      <div><p>Frontend Developer</p></div>
     </div>
     <div class="center" id="main">
       <main>
         <div id="content-about">
           <div id="about">
-            <img src="images\deer-selfie.jpg" alt="photo">
+            <img src="images\deer-selfie.jpg" alt="photo" />
             <div>
               <h2>Kamil</h2>
-              <p>Frond-end developer | Designer</p>
+              <p>Frontend Developer</p>
             </div>
           </div>
-            <article class="content-box">
-              <h2>About me</h2>
-              <p>Front-end web developer</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor blandit felis eget convallis. Integer imperdiet blandit justo. Proin mattis metus consequat diam congue.</p>
-            </article>
-            <article id="skills" class="content-box">
-              <h2>Skills</h2>
-              <ul>
+          <article class="content-box">
+            <h2>About me</h2>
+            <p>Hello, my name is Kamil.</p>
+            <p>I am beginner programmer, looking to improve my skills and increase my knowledge.</p>
+          </article>
+          <article class="content-box skills">
+            <h2>Skills</h2>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>React</li>
+            </ul>
+          </article>
+          <article class="content-box">
+            <h2>My plan for future.</h2>
+            <p>Learn new technologies and master these I know.</p>
+            <p>And a lot more...</p>
+          </article>
+          <article class="content-box">
+            <h2>CALCULATOR</h2>
+            <p>This project is simple calculator application. Allows you to do basic math operations.</p>
+            <div>
+              <ul class="list-of-skills">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
-                <li>SQL</li>
               </ul>
-            </article>
-            <article class="content-box">
-              <h2>Donec augue. </h2>
-              <p>Suspendisse posuere lectus ex. </p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor blandit felis eget convallis. Integer imperdiet blandit justo. Proin mattis metus consequat diam congue.</p>
-            </article>
-            <article class="content-box">
-              <h2>Title</h2>
-              <p>Aliquam a lorem. </p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor blandit felis eget convallis. Integer imperdiet blandit justo. Proin mattis metus consequat diam congue.</p>
-            </article>
-            <article class="content-box">
-              <h2>Title<h2>
-                <p>Integer in malesuada metus, nec suscipit.</p>
-                <p>Proin ac augue nisi. Morbi rhoncus elit et ipsum mollis, vitae sollicitudin augue aliquam. Quisque pretium orci ut metus ultrices, non ornare urna pharetra. Pellentesque neque tortor, cursus et mattis. </p>
-            </article>
-          </div>
-          <div id="websites">
-            <h1>Websites</h1>
-            <div id="flex" >
-              <div class="content-box">
-                <h2>Projekt 1</h2>
-                <a href="">Link</a>
-                <p>Sed tincidunt ligula in interdum ullamcorper. Maecenas ac enim et dui finibus gravida. Praesent ultrices turpis at nulla volutpat, eget bibendum velit bibendum. Nulla facilisi. Nunc condimentum libero nec est tincidunt aliquam eget ac nibh. Pellentesque nunc purus, finibus a dignissim finibus, dictum sit amet massa. Quisque eu ex eget velit tincidunt faucibus id ac risus. Vestibulum a maximus enim. Integer malesuada tempus magna, in volutpat magna convallis ac. Donec enim nunc, egestas tristique purus id, maximus gravida lectus. Aenean dictum tortor in odio finibus dignissim. Morbi dignissim nunc sit amet velit consequat congue. </p>
-              </div>
-              <div class="content-box">
-                <h2>Projekt 2</h2>
-                <a href="">Link</a>
-                <p>
-                  Aliquam erat volutpat. Suspendisse tempus mi mi, ac porttitor metus ullamcorper non. Nulla accumsan molestie iaculis. Donec accumsan nisi dui, at rutrum magna iaculis id. Maecenas mauris ipsum, porttitor non feugiat vel, gravida vitae velit. Morbi in nisi accumsan, ultricies augue eleifend, bibendum quam. Nam rhoncus convallis dui et facilisis. Suspendisse eu cursus mi.  Maecenas sagittis vitae risus id gravida. Duis fringilla dui non turpis luctus faucibus. Cras imperdiet gravida scelerisque. Duis dignissim, ligula in fermentum bibendum, lacus metus vestibulum ligula, et dignissim dolor lorem ac orci.
-                  
-                  Sed tincidunt ligula in interdum ullamcorper. Maecenas ac enim et dui finibus gravida. Praesent ultrices turpis at nulla volutpat, eget bibendum velit bibendum. Nulla facilisi. Nunc condimentum libero nec est tincidunt aliquam eget ac nibh. Pellentesque nunc purus, finibus a dignissim finibus, dictum sit amet massa. Quisque eu ex eget velit tincidunt faucibus id ac risus. Vestibulum a maximus enim. Integer malesuada tempus magna, in volutpat magna convallis ac. Donec enim nunc, egestas tristique purus id, maximus gravida lectus. Aenean dictum tortor in odio finibus dignissim. Morbi dignissim nunc sit amet velit consequat congue.  </p>
-              </div>
-              <div class="content-box">
-                <h2>Projekt 3</h2>
-                <a href="">Link</a>
-                <p>Sed tincidunt ligula in interdum ullamcorper. Maecenas ac enim et dui finibus gravida. Praesent ultrices turpis at nulla volutpat, eget bibendum velit bibendum.   Nulla facilisi. Nunc condimentum libero nec est tincidunt aliquam eget ac nibh. Pellentesque nunc purus, finibus a dignissim finibus, dictum sit amet massa. Quisque eu ex eget velit tincidunt faucibus id ac risus. Aenean dictum tortor in odio finibus dignissim. Morbi dignissim nunc sit amet velit consequat congue. </p>
-              </div>
             </div>
-          </div>
-        </main>
-      </div>
+            <a href="https://github.com/kuzgan/Simple-calculator" target="_blank">Check out</a>
+          </article>
+          <article class="content-box">
+            <h2>TIC-TAC-TOE</h2>
+            <p>Tic-tac-toe game.</p>
+            <div>
+              <ul class="list-of-skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <a href="https://github.com/kuzgan/Tic-Tac-Toe" target="_blank">Check out</a>
+          </article>
+        </div>
+      </main>
+    </div>
     <footer>
-      <h1>Proin quis tempor quam.</h1>
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li>
+          <a href="https://github.com/kuzgan" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
